@@ -19,7 +19,7 @@ int main(){
     for(int i = 0; i < 10; i++) {
         eps.vol(&bt);
         fprintf(fp, "Time = %.2f [s] Vol = %.2f [V]\r\n", sattime.read(),bt);
-        wait(0.1);  
+        wait(0.3);  
     }
     fclose(fp);
 
@@ -31,3 +31,4 @@ int main(){
     fclose(fp);
     pc.printf("Goodbye!!\r\n");
 }
+
